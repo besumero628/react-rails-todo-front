@@ -11,7 +11,9 @@ export const PrimaryButton: FC<Props> = memo((props)=>{
     <Button
       borderRadius={0}
       type="submit"
+      variant="solid"
       colorScheme="teal"
+      width="full"
     >
       {children}
     </Button>
