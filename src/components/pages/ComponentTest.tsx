@@ -6,7 +6,7 @@ export const Test: FC = memo(()=>{
   return (
     <>
       <PrimaryButton>Button!</PrimaryButton>
-      <ViewIconButton show={true} />
+      <ViewIconButton show={false} color={'red.500'} />
     </>
   )
 })
