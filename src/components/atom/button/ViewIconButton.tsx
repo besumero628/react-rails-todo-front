@@ -1,15 +1,16 @@
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { Icon } from "@chakra-ui/react";
+import { Icon, IconButton } from "@chakra-ui/react";
 import { FC, memo } from "react";
 
 type Props = {
-  show: boolean
-  color: string
+  showPassword: boolean
 }
 
 export const ViewIconButton:FC<Props> = memo((props)=> {
-  const {show = false, color} = props
+  const {showPassword = false} = props
   return (
-    show ? <Icon as={ViewIcon} color={color} /> : <Icon as={ViewOffIcon} color={color} />
+    showPassword 
+      ? <IconButton aria-label="show password" icon={<Icon as={ViewIcon} />} w="100%" bg='white' /> 
+      : <IconButton aria-label="show password" icon={<Icon as={ViewOffIcon} />} w="100%" bg='white' />
   )
 })
