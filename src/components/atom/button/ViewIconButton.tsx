@@ -1,6 +1,6 @@
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Icon, IconButton } from "@chakra-ui/react";
-import { FC, memo } from "react";
+import { FC, memo, ReactComponentElement } from "react";
 
 type Props = {
   showPassword: boolean

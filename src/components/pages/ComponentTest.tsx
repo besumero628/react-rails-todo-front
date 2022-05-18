@@ -1,4 +1,7 @@
+import { ViewIcon } from "@chakra-ui/icons";
+import { FormControl, Icon } from "@chakra-ui/react";
 import { FC, memo } from "react";
+import { BoxWithIcon } from "../atom/box/BoxWithIcon";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
 import { ViewIconButton } from "../atom/button/ViewIconButton";
 
@@ -7,6 +10,9 @@ export const Test: FC = memo(()=>{
     <>
       <PrimaryButton>Button!</PrimaryButton>
       <ViewIconButton showPassword={false} />
+      <FormControl isRequired>
+        <BoxWithIcon placeholder="username" icon={<Icon as={ViewIcon} />} />
+      </FormControl>
     </>
   )
 })
