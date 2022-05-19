@@ -11,7 +11,7 @@ export const Test: FC = memo(()=>{
       <PrimaryButton>Button!</PrimaryButton>
       <ViewIconButton showPassword={false} />
       <FormControl isRequired>
-        <BoxWithIcon placeholder="username" icon={<Icon as={ViewIcon} />} />
+        <BoxWithIcon placeholder="username" lefticon={<Icon as={ViewIcon} />} righticon={<ViewIconButton showPassword={true} />} />
       </FormControl>
     </>
   )

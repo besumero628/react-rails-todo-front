@@ -1,21 +1,26 @@
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import { Input, InputGroup, InputLeftElement, InputRightElement } from "@chakra-ui/react";
 import { FC, memo, ReactElement } from "react";
 
 type Props = {
   placeholder: string
-  icon: ReactElement
+  show? : boolean
+  lefticon?: ReactElement
+  righticon?: ReactElement
 }
 
 export const BoxWithIcon:FC<Props> = memo((props)=>{
-  const {placeholder, icon} = props
+  const {placeholder, show=true, lefticon, righticon} = props
   return (
     <>
     <InputGroup>
       <InputLeftElement
           pointerEvents='none'
-          children={icon} 
+          children={lefticon} 
         />
-        <Input id="username" placeholder={placeholder} />
+        <Input id="username" placeholder={placeholder} type={show? 'text' : 'password' } />
+      <InputRightElement
+        children={righticon}
+       />
     </InputGroup>
     </>
   )
