@@ -16,7 +16,8 @@ export const ViewIconButton:FC<Props> = memo((props)=> {
       bg='none' 
       _focus={{ boxShadow: "none"}} 
       _hover={{bg: "none"}} 
-      _active={{bg: "none"}} 
+      _active={{bg: "none"}}
+      color="gray.300"
     />
       : <IconButton 
           aria-label="show password" 
@@ -25,7 +26,8 @@ export const ViewIconButton:FC<Props> = memo((props)=> {
           bg='none' 
           _focus={{ boxShadow: "none"}} 
           _hover={{bg: "none"}} 
-          _active={{bg: "none"}} 
+          _active={{bg: "none"}}
+          color="gray.300"
         />
   )
 })
