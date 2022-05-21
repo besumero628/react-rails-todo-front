@@ -2,6 +2,7 @@ import { Input, InputGroup, InputLeftElement, InputRightElement } from "@chakra-
 import { FC, memo, ReactElement } from "react";
 
 type Props = {
+  id: string
   placeholder: string
   show? : boolean
   lefticon?: ReactElement
@@ -9,7 +10,7 @@ type Props = {
 }
 
 export const BoxWithIcon:FC<Props> = memo((props)=>{
-  const {placeholder, show=true, lefticon, righticon} = props
+  const {id, placeholder, show=true, lefticon, righticon} = props
   return (
     <>
     <InputGroup>
@@ -17,7 +18,7 @@ export const BoxWithIcon:FC<Props> = memo((props)=>{
           pointerEvents='none'
           children={lefticon} 
         />
-        <Input id="username" placeholder={placeholder} type={show? 'text' : 'password' } />
+        <Input id={id} placeholder={placeholder} type={show? 'text' : 'password' } />
       <InputRightElement
         children={righticon}
        />

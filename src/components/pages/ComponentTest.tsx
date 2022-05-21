@@ -15,11 +15,13 @@ export const Test: FC = memo(()=>{
       <PrimaryButton>Button!</PrimaryButton>
       <ViewIconButton showPassword={false} />
       <FormControl isRequired>
-        <BoxWithIcon 
+        <BoxWithIcon
+          id = "username" 
           placeholder="username" 
           lefticon={<CFaUserAlt color="gray.300" />} 
         />
-        <BoxWithIcon 
+        <BoxWithIcon
+          id = "password" 
           placeholder="password"
           show={false}
           lefticon={<CFaLock color="gray.300" />} 
