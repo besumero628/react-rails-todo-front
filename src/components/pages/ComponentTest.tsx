@@ -1,7 +1,7 @@
 import { ViewIcon } from "@chakra-ui/icons";
 import { chakra, FormControl, Icon } from "@chakra-ui/react";
 import { FC, memo, useState } from "react";
-import { BoxWithIcon } from "../atom/box/BoxWithIcon";
+import { BoxWithIcon } from "../molecules/box/BoxWithIcon";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
 import { ViewIconButton } from "../atom/button/ViewIconButton";
 import { FaUserAlt, FaLock } from "react-icons/fa"
@@ -10,6 +10,8 @@ const CFaUserAlt = chakra(FaUserAlt)
 const CFaLock = chakra(FaLock)
 
 export const Test: FC = memo(()=>{
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowClick = () => setShowPassword(!showPassword)
 
   return (
     <>
@@ -24,9 +26,9 @@ export const Test: FC = memo(()=>{
         <BoxWithIcon
           id = "password" 
           placeholder="password"
-          show={false}
+          show={showPassword}
           lefticon={<CFaLock color="gray.300" />} 
-          righticon={<ViewIconButton />} 
+          righticon={<ViewIconButton showPassword={showPassword} onClick={ handleShowClick }/>} 
         />
       </FormControl>
     </>
