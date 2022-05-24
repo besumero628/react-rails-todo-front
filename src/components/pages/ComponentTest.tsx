@@ -5,6 +5,7 @@ import { BoxWithIcon } from "../molecules/box/BoxWithIcon";
 import { PrimaryButton } from "../atom/button/PrimaryButton";
 import { ViewIconButton } from "../atom/button/ViewIconButton";
 import { FaUserAlt, FaLock } from "react-icons/fa"
+import { LoginForm } from "../organisms/form/LoginForm";
 
 const CFaUserAlt = chakra(FaUserAlt)
 const CFaLock = chakra(FaLock)
@@ -31,6 +32,7 @@ export const Test: FC = memo(()=>{
           righticon={<ViewIconButton showPassword={showPassword} onClick={ handleShowClick }/>} 
         />
       </FormControl>
+      <LoginForm />
     </>
   )
 })
