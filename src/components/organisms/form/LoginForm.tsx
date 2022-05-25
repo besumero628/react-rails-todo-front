@@ -1,6 +1,7 @@
 import { Box, chakra, FormControl, Stack } from "@chakra-ui/react";
 import { FC, memo, useState } from "react";
 import { FaLock, FaUserAlt } from "react-icons/fa";
+import { PrimaryButton } from "../../atom/button/PrimaryButton";
 import { ViewIconButton } from "../../atom/button/ViewIconButton";
 import { BoxWithIcon } from "../../molecules/box/BoxWithIcon";
 
@@ -36,6 +37,7 @@ export const LoginForm: FC = memo(() => {
                 righticon={<ViewIconButton showPassword={showPassword} onClick={ handleShowClick }/>} 
               />
             </FormControl>
+            <PrimaryButton>Login</PrimaryButton>
           </Stack>
         </form>
       </Box>

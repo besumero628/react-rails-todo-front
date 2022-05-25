@@ -20,7 +20,7 @@ export const LoginLayout :FC = memo(()=> {
                     alignItems="center"
                 >
                     <Avatar bg="teal.500" />
-                    <Heading color="teal.400">Login</Heading>
+                    <Heading color="teal.400">Sign In</Heading>
                     <LoginForm />
                 </Stack>
             </Flex>
