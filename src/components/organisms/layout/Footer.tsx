@@ -11,7 +11,6 @@ export const Foooter: FC = memo(()=> {
                 backgroundColor="gray.200"
                 justifyContent="center"
                 alignItems="center"
-                // position="absolute"
             ></Flex>
         </>
     )
