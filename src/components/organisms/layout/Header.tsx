@@ -15,11 +15,10 @@ export const Header: FC = memo(()=> {
             >
                 <Flex align="center" as="a" mr={8} _hover={{cursor: "pointer"}} >
                     <Heading as="h1" fontSize={{base: "md", md:"lg"}}>
-                        React×Rails ToDO APP
+                        React x Rails ToDO APP
                     </Heading>
                     <Spacer />
                     <ButtonGroup gap='2'>
-                        <PrimaryButton>sign in</PrimaryButton>
                         <PrimaryButton>Logout</PrimaryButton>
                     </ButtonGroup>
                 </Flex>
