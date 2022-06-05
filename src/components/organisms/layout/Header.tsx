@@ -1,5 +1,6 @@
 import { ButtonGroup, Flex, Heading, Spacer } from "@chakra-ui/react";
 import { FC, memo } from "react";
+import { IconButton } from "../../atom/button/IconButton";
 import { PrimaryButton } from "../../atom/button/PrimaryButton";
 
 export const Header: FC = memo(()=> {
@@ -18,9 +19,7 @@ export const Header: FC = memo(()=> {
                         React x Rails ToDO APP
                     </Heading>
                     <Spacer />
-                    <ButtonGroup gap='2'>
-                        <PrimaryButton>Logout</PrimaryButton>
-                    </ButtonGroup>
+                    
                 </Flex>
             </Flex>
         </>
