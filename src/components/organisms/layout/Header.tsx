@@ -1,7 +1,5 @@
-import { ButtonGroup, Flex, Heading, Spacer } from "@chakra-ui/react";
+import { Flex, Heading, Spacer } from "@chakra-ui/react";
 import { FC, memo } from "react";
-import { IconButton } from "../../atom/button/IconButton";
-import { PrimaryButton } from "../../atom/button/PrimaryButton";
 
 export const Header: FC = memo(()=> {
     return (
@@ -19,7 +17,6 @@ export const Header: FC = memo(()=> {
                         React x Rails ToDO APP
                     </Heading>
                     <Spacer />
-                    
                 </Flex>
             </Flex>
         </>
