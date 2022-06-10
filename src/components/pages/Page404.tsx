@@ -1,5 +1,10 @@
 import { FC, memo } from "react";
+import { Page404Layout } from "../templates/Page404Layout";
 
 export const Page404: FC = memo(()=> {
-  return <p>Page404</p>
+  return (
+    <>
+      <Page404Layout />
+    </>
+  )
 })
