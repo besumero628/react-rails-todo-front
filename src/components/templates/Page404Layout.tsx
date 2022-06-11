@@ -7,7 +7,6 @@ export const Page404Layout: FC = memo(() => {
         <>
             <Header />
                 <p>test</p>
-            <Foooter />
         </>
     )
 })
