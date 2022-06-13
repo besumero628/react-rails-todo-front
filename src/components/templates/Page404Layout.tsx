@@ -20,7 +20,7 @@ export const Page404Layout: FC = memo(() => {
                         <Text as={'span'} color={'green.400'}>
                         404<br />
                         </Text>
-                        Not Found...
+                        Not Found
                     </Heading>
                     </Stack>
                     
